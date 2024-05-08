@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="frontpage.css">
+    <title>Snake Quiz Frenzy</title>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="gamesound.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="Frontpage.mp4" type="video/mp4">
+        </video>
+        <div class="start-name">
+            <h1>Snake Quiz Frenzy</h1>
+            <a href="Map1.html"><button></button></a>
+        </div>
+    </div>
+
+    <!-- About button -->
+    <div class="About">
+        <button onclick="openPopup('popup')">About</button>
+    </div>
+
+    <!-- Credits button -->
+    <div class="Credits">
+        <button onclick="openPopup('popup1')">Credits</button>
+    </div>
+    
+    <!-- Popup div for About -->
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup('popup')">&times;</span>
+        <h2>About Snake Quiz Frenzy</h2>
+        <p>Welcome to the classic Snake game! In this timeless arcade experience, you control a hungry snake roaming across a grid-filled board. Your objective is simple: eat as much food as you can while avoiding collisions with the snake's own body.
+            <br><br>
+            How to Play:
+            
+            Use the arrow keys on your keyboard to navigate the snake.
+            The snake will move in the direction of the last arrow key pressed.
+            Guide the snake to the food (represented by red blocks) to grow longer.
+            Each time the snake consumes food, it will increase in length and you'll earn points.
+            Be careful not to run into the snake's own body, or it's game over!
+            You have three lives to spare, so make each move count.
+            <br><br>
+            Trivia Challenge:
+            
+            But wait, there's more! Embedded within the game are trivia questions related to HTML. When the snake eats enough food to earn 10 points, it will unlock another trivia question. Answer correctly to earn additional points and extend your gameplay.
+            
+            Can you achieve a high score while testing your HTML knowledge? Let's find out!</p>
+    </div>
+
+    <!-- Popup div for Credits -->
+    <div id="popup1" class="popup">
+        <span class="close" onclick="closePopup('popup1')">&times;</span>
+        <h2>Credits to:</h2>
+        <h3>Richard T. Napuli</h3>
+        <h3>Elijah Don Simon Ferrer</h3>
+        <h3>Christine Bonicarlo</h3>
+        <h3>James Jugarap</h3>
+        <h3>Raslanie Salic</h3>
+        <h3>Raslanie Salic</h3>
+    </div>
+
+    <!-- JavaScript to handle popup -->
+    <script>
+        function openPopup(popupId) {
+            document.getElementById(popupId).style.display = "block";
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+
